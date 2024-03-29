@@ -100,7 +100,7 @@ namespace OnnxStack.StableDiffusion.Diffusers.StableDiffusion
                 }
 
                 // Unload if required
-                if (_memoryMode == MemoryModeType.Minimum)
+                if (_memoryMode == MemoryModeType.Minimum && _unet.MinMemoryModeShouldUnloadModel)
                     await _unet.UnloadAsync();
 
 

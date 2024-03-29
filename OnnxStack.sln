@@ -9,8 +9,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnnxStack.StableDiffusion",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnnxStack.Console", "OnnxStack.Console\OnnxStack.Console.csproj", "{46A43C80-A440-4461-B7EB-81FA998FB24B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnnxStack.UI", "OnnxStack.UI\OnnxStack.UI.csproj", "{85BB1855-8C3B-4049-A2DD-1130FA6CD846}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnnxStack.ImageUpscaler", "OnnxStack.ImageUpscaler\OnnxStack.ImageUpscaler.csproj", "{A33D08BF-7881-4910-8439-5AE46646C1DD}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OnnxStack.Adapter", "OnnxStack.Adapter\OnnxStack.Adapter.vcxproj", "{5A64FC26-6926-4A45-ACCE-1FE173166990}"
@@ -49,14 +47,6 @@ Global
 		{46A43C80-A440-4461-B7EB-81FA998FB24B}.Release|x64.Build.0 = Release|x64
 		{46A43C80-A440-4461-B7EB-81FA998FB24B}.Release-Nvidia|x64.ActiveCfg = Release-Nvidia|x64
 		{46A43C80-A440-4461-B7EB-81FA998FB24B}.Release-Nvidia|x64.Build.0 = Release-Nvidia|x64
-		{85BB1855-8C3B-4049-A2DD-1130FA6CD846}.Debug|x64.ActiveCfg = Debug|x64
-		{85BB1855-8C3B-4049-A2DD-1130FA6CD846}.Debug|x64.Build.0 = Debug|x64
-		{85BB1855-8C3B-4049-A2DD-1130FA6CD846}.Debug-Nvidia|x64.ActiveCfg = Debug-Nvidia|x64
-		{85BB1855-8C3B-4049-A2DD-1130FA6CD846}.Debug-Nvidia|x64.Build.0 = Debug-Nvidia|x64
-		{85BB1855-8C3B-4049-A2DD-1130FA6CD846}.Release|x64.ActiveCfg = Release|x64
-		{85BB1855-8C3B-4049-A2DD-1130FA6CD846}.Release|x64.Build.0 = Release|x64
-		{85BB1855-8C3B-4049-A2DD-1130FA6CD846}.Release-Nvidia|x64.ActiveCfg = Release-Nvidia|x64
-		{85BB1855-8C3B-4049-A2DD-1130FA6CD846}.Release-Nvidia|x64.Build.0 = Release-Nvidia|x64
 		{A33D08BF-7881-4910-8439-5AE46646C1DD}.Debug|x64.ActiveCfg = Debug|x64
 		{A33D08BF-7881-4910-8439-5AE46646C1DD}.Debug|x64.Build.0 = Debug|x64
 		{A33D08BF-7881-4910-8439-5AE46646C1DD}.Debug-Nvidia|x64.ActiveCfg = Debug|x64

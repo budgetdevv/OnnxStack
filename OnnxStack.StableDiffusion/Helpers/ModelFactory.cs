@@ -22,7 +22,7 @@ namespace OnnxStack.StableDiffusion.Helpers
         /// <param name="deviceId">The device identifier.</param>
         /// <param name="executionProvider">The execution provider.</param>
         /// <returns></returns>
-        public static StableDiffusionModelSet CreateModelSet(string modelFolder, DiffuserPipelineType pipeline, ModelType modelType, int deviceId, ExecutionProvider executionProvider, MemoryModeType memoryMode)
+        public static StableDiffusionModelSet CreateModelSet(string modelFolder, DiffuserPipelineType pipeline, ModelType modelType, int deviceId, ExecutionProvider executionProvider, MemoryModeType memoryMode, bool minMemoryModelShouldUnloadUNET = true)
         {
             var tokenizerPath = Path.Combine(modelFolder, "tokenizer", "model.onnx");
             if (!File.Exists(tokenizerPath))
@@ -61,7 +61,8 @@ namespace OnnxStack.StableDiffusion.Helpers
             var unetConfig = new UNetConditionModelConfig
             {
                 ModelType = modelType,
-                OnnxModelPath = unetPath
+                OnnxModelPath = unetPath,
+                MinMemoryModeShouldUnloadModel = minMemoryModelShouldUnloadUNET,
             };
 
             var vaeDecoderConfig = new AutoEncoderModelConfig
